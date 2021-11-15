@@ -1,0 +1,1 @@
+At the end of this project, you are expected to be able to explain about python hello world project to anyone, without the help of Google:
