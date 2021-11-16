@@ -7,4 +7,4 @@ def uppercase(str):
             n = 0
         print("{:c}" .format(ord(w) - n), end="")
     print()
-        
+
