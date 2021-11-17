@@ -1,4 +1,3 @@
 #!/usr/bin/python3
 for n in range(0, 99):
-    print(n, "=", hex(n))
-
+    print("{:d} = {}" .format(n, hex(n)))
