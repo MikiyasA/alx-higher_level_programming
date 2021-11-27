@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
-    if a_dictionary not None:
-        for k, v in sorted(a_dictionary.items()):
-            print("{}: {}" .format(k, v))
+    list_o = list(a_dictionary.keys())
+    list_o.sort()
+    
+    for k in list_o:
+            print("{}: {}" .format(k, a_dictionary.get(k)))
