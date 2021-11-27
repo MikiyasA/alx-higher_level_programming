@@ -2,6 +2,6 @@
 def only_diff_elements(set_1, set_2):
     set1 = set(set_1)
     set2 = set(set_2)
-    diff = (set1 | set2)
+    diff = (set1 ^ set2)
 
     return (diff)
