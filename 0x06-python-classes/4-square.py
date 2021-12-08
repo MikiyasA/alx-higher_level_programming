@@ -1,3 +1,25 @@
 #!/usr/bin/python3
 class Square:
-    
+     """ Class Square that holds a square objectd """
+     def __init__ (self, size):
+        """ Intialize methonds that store the
+ size of the square. """
+        if not isinstance(size, int):
+            raise TypeError ("size must be an integer")
+        elif size < 0:
+            raise ValueError ("size must be >= 0")
+        else:
+            self.__size = size
+
+    @property
+    def size(self):
+        """ property for method size """
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        self.__size = value
+
+    def area(self):
+        """ The methode area returns area of square """
+        return int(self.__size) * int(self.__size)

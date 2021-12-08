@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-class Square:
+class Squa8re:
+    """ Class Square holds the square objects """
     def __init__(self, size=0):
+        """ Initialized  methode that store the size od square """
         self.__size = size
 
         if not isinstance(size, int):
@@ -9,4 +11,5 @@ class Square:
             raise ValueError ("size must be >= 0")
 
     def area(self):
-        area = (self.size ** 2)
+        """ The methode area returns area of square """
+        return int(self.__size) * int(self.__size)
