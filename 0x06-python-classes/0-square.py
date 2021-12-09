@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-""" Define a Square class
+""" Square module
 """
 
 
 class Square:
+    """ Define a Square class
+    """
     pass
