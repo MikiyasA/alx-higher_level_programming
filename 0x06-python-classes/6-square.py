@@ -8,8 +8,8 @@ class Square:
     """
     def __init__(self, size=0, position=(0, 0)):
         """ Intialize methonds that store the size of the square. """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -48,7 +48,6 @@ class Square:
 
     def area(self):
         """ The methode area returns area of square """
-
         return int(self.__size) * int(self.__size)
 
     def my_print(self):
