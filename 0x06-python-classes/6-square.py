@@ -53,6 +53,17 @@ class Square:
 
     def my_print(self):
         """ The function that prints the square with the character # """
+        if len(self.__position) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(self.__position, tuple):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if self.__position[0] < 0 or self.__position[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(self.__position[0], int):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(self.__position[1], int):
+            raise TypeError("position must be a tuple of 2 positive integers")
+
         if self.size == 0:
             print()
         else:
