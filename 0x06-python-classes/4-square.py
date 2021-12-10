@@ -1,13 +1,17 @@
 #!/usr/bin/python3
+""" Square module
+"""
+
+
 class Square:
-     """ Class Square that holds a square objectd """
-     def __init__ (self, size):
-        """ Intialize methonds that store the
- size of the square. """
+    """ Define a Square class
+    """
+    def __init__(self, size):
+        """ Intialize methonds that store the size of the square. """
         if not isinstance(size, int):
-            raise TypeError ("size must be an integer")
+            raise TypeError("size must be an integer")
         elif size < 0:
-            raise ValueError ("size must be >= 0")
+            raise ValueError("size must be >= 0")
         else:
             self.__size = size
 
@@ -18,8 +22,14 @@ class Square:
 
     @size.setter
     def size(self, value):
+        """ Setter for method size """
         self.__size = value
 
     def area(self):
         """ The methode area returns area of square """
-        return int(self.__size) * int(self.__size)
+        if not isinstance(self.__size, int):
+            raise TypeError("size must be an integer")
+        elif self.__size < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            return int(self.__size) * int(self.__size)
