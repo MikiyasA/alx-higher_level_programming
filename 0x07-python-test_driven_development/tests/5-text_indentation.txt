@@ -1,0 +1,46 @@
+The ``5-text_indentation`` module
+
+###########################################################
+
+Using ``text-indentation`` function
+-----------------------------------------------------------
+
+Importing the function as ti from the module
+	  >>> ti = __import__('5-text_indentation').text_indentation
+
+Checking if its print correctly.
+      >>> ti("""Python is easy programming language. I love python.""")
+      Python is easy programming language.
+      <BLANKLINE>
+      I love python.
+
+Checking if its print with sinle quote text:
+      >>> ti("Python is easy programming language. I love python.")
+      Python is easy programming language.
+      <BLANKLINE>
+      I love python.
+
+Checking if it print correctly even we put space after character:
+      >>> ti("Do you love python? ")
+      Do you love python?
+      <BLANKLINE>
+
+Checking if it print correctly when we dont use the characters:
+      >>> ti("Yes, I am")
+      Yes, I am
+
+Checking with casted number "08:21"
+      >>> ti("0821")
+      0821
+
+Checking when text is not string:
+      >>> ti(821)
+      Traceback (most recent call last):
+      ...
+      TypeError: text must be a string
+
+      >>> ti(08.21)
+      Traceback (most recent call last):
+      ...
+      TypeError: text must be a string
+

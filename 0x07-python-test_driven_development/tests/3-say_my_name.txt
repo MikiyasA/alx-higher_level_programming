@@ -1,0 +1,35 @@
+The ``3-say_my_name`` module
+###########################################
+
+Using ``say_my_name`` function
+-------------------------------------------
+
+Importing the function from module:
+       >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Print first and last name:
+      >>> say_my_name("Mikiyas", "Adere")
+      My name is Mikiyas Adere
+
+Print only first name:
+      >>> say_my_name("Mikiyas")
+      My name is Mikiyas 
+
+Check if its print number casts as string:
+      >>> say_my_name("12", "19")
+      My name is 12 19
+
+
+Check if the args are str:
+      >>> say_my_name(3, "BEATA")
+      Traceback (most recent call last):
+      ...
+      TypeError: first_name must be a string
+
+
+Check if the last name is str:
+      >>> say_my_name("Mikiyas", 94)
+      Traceback (most recent call last):
+      ...
+      TypeError: last_name must be a string
+

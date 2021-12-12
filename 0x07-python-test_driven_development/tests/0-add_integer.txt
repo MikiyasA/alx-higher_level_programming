@@ -1,0 +1,47 @@
+The ``0-add_integer`` module
+
+#############################
+
+Using ``add_integer``
+------------------------------
+Importing function from the module:
+	  >>> add_integer = __import__('0-add_integer').add_integer
+
+Addition of 1 and 2:
+	 >>> add_integer(1, 2)
+	 3
+
+Addition of 100 and -2:
+	 >>> add_integer(100, -2)
+	 98
+
+Addition of only value 2 "since we pass value of b if def funtion:
+	 >>> add_integer(2)
+	 100
+
+Addition of float 100.3 and -2:
+	 >>> add_integer(100.3, -2)
+	 98
+
+Addition of number and strint, 4 and "School":
+	 >>> add_integer(4, "School")
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: b must be an integer
+
+Passing None:
+	>>> add_integer(None)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+Addition two float number, 90.8 and 8.3
+	>>> add_integer(90.8, 8.3)
+	98
+
+Addition of letter and number:
+	 >>> add_integer('9', 8)
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: a must be an integer
+

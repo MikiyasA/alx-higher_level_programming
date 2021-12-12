@@ -1,0 +1,41 @@
+The ``4-print_square`` module
+
+############################################
+Usint ``print_square`` function
+--------------------------------------------
+Importing 'print_square' function from the module:
+	  >>> ps = __import__('4-print_square').print_square
+
+Print square with size of 2:
+      >>> ps(2)
+      ##
+      ##
+
+Checking with size of 0:
+      >>> ps(0)
+
+Cheching with size of -4:
+      >>> ps(-4)
+      Traceback (most recent call last):
+      ...
+      ValueError: size must be >= 0
+
+Checking with float size of -1.5:
+	 >>> ps(-1.5)
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: size must be an integer
+
+Checking with string size of "ten":
+	 >>> ps("ten")
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: size must be an integer
+
+
+Cheking with str casted size of "3":
+	>>> ps("3")
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
