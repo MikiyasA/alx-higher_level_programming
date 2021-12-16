@@ -1,4 +1,4 @@
-#!/use/bin/python3
+#!/usr/bin/python3
 """ The module that prints a text with 2 new lines
 after each of these characters: ., ? and :
 using def text_indentation(text): function
