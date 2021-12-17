@@ -6,7 +6,7 @@ using def print_square(size): function """
 def print_square(size):
     """ The function print size of square with '#'
     Args:
-        size: size of equare 
+        size: size of equare
     Exception:
         TypeError: size must be an integer
         ValueError: size must be >= 0

@@ -44,3 +44,11 @@ Chexking with float size 1.8:
 	 Traceback (most recent call last):
 	 ...
 	 TypeError: size must be an integer
+
+
+Checkin with float size -1.5
+	>>> ps(-1.8)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
