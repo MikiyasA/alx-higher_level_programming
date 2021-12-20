@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+The module import subclass Rectangle and use it as sub.subclasd
+"""
+
 
 Rectangle = __import__('9-rectangle').Rectangle
 

@@ -1,4 +1,4 @@
-#!/usr/bin/pthon3
+#!/usr/bin/python3
 """
 The module to check the object is an instance or instance  of a class
 Using def is_kind_of_class(obj, a_class):

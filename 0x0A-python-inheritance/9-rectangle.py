@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+The module import BaseGeometry and use it as super class
+
+"""
+
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 

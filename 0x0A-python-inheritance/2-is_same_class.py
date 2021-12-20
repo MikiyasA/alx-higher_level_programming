@@ -1,4 +1,4 @@
-#!/usr/bin/pthon3
+#!/usr/bin/python3
 """
 The module to check instance of object
 Using def is_same_class(obj, a_class):
