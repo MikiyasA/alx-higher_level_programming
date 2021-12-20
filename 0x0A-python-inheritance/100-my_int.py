@@ -4,6 +4,7 @@ The module holds MyInt that inherits from int
 
 """
 
+
 class MyInt(int):
     """
     MyInt class
