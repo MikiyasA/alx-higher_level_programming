@@ -5,8 +5,8 @@ represented by a JSON string:
 Using: def from_json_string(my_str):
 """
 
-
 import json
+
 
 def from_json_string(my_str):
     """ The method  returns an object (Python data structure)

@@ -4,8 +4,8 @@ The module that creates an Object from a “JSON file”:
 Using: def load_from_json_file(filename):
 """
 
-
 import json
+
 
 def load_from_json_file(filename):
     """ the method that creates an Object from a JSON file
