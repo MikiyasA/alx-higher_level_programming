@@ -441,3 +441,65 @@ class TestRect(unittest.TestCase):
             r.update(id=19, width=30, height=32, x=33, y=34)
             print(r)
             self.assertEqual(strout.getvalue(), res)
+
+    def test_dic_1(self):
+        """ Test the output of methon to_dictionary """
+        r = Rectangle(3, 3)
+        res = "[Rectangle] (1) 0/0 - 3/3\n"
+        with patch('sys.stdout', new=StringIO()) as strout:
+            print(r)
+            self.assertEqual(strout.getvalue(), res)
+
+    def test_dic_1(self):
+        """ Test the ourput of method to_dictionart """
+        r1 = Rectangle(10, 2, 1, 9)
+        r1_dic = r1.to_dictionary()
+        r1.update(**r1_dic)
+        res1 = "{'x': 1, 'y': 9, 'id': 1, 'height': 2, 'width': 10}\n"
+
+        with patch('sys.stdout', new=StringIO()) as strout:
+            print(r1_dic)
+            self.assertEqual(strout.getvalue(), res1)
+
+        res2 = "[Rectangle] (1) 1/9 - 10/2\n"
+        with patch('sys.stdout', new=StringIO()) as strout:
+            print(r1)
+            self.assertEqual(strout.getvalue(), res2)
+
+    def test_create(self):
+        """ Test create method """
+        dictionary = {'id': 89}
+        r1 = Rectangle.create(**dictionary)
+        self.assertEqual(r1.id, 89)
+
+    def test_create_2(self):
+        """ Test create method """
+        dictionary = {'id': 89, 'width': 1}
+        r1 = Rectangle.create(**dictionary)
+        self.assertEqual(r1.id, 89)
+        self.assertEqual(r1.width, 1)
+
+    def test_create_3(self):
+        """ Test create method """
+        dictionary = {'id': 89, 'width': 1, 'height': 2}
+        r1 = Rectangle.create(**dictionary)
+        self.assertEqual(r1.id, 89)
+        self.assertEqual(r1.width, 1)
+        self.assertEqual(r1.height, 2)
+
+    def test_load_from_file(self):
+        """ Test load JSON file """
+        load_file = Rectangle.load_from_file()
+        self.assertEqual(load_file, [])
+
+    def test_load_from_file_2(self):
+        """ Test load JSON file """
+        r1 = Rectangle(5, 5)
+        r2 = Rectangle(8, 2, 5, 5)
+
+        linput = [r1, r2]
+        Rectangle.save_to_file(linput)
+        loutput = Rectangle.load_from_file()
+
+        for i in range(len(linput)):
+            self.assertEqual(linput[i].__str__(), loutput[i].__str__())
