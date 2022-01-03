@@ -2,6 +2,7 @@
 """
 The module with class Base and
 private class attribute __nb_objects = 0
+
 """
 import json
 import os.path
@@ -9,6 +10,8 @@ import csv
 
 
 class Base:
+    """ The class Base serve as parent class
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):

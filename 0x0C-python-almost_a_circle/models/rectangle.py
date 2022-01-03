@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 """
-The module rectangls hold class Rectangle
+8The module rectangls hold class Rectangle
 inherits from Base
+
 """
 from models.base import Base
 
 
 class Rectangle(Base):
     """
-    cladd Rectangle inherits from Base
+    class Rectangle inherits from Base
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """ Initialize width, height, x and y
