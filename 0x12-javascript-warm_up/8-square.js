@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const s = process.argv[2];
+const s = Number(process.argv[2]);
 let c = 0;
 if (s) {
   while (c < s) {
