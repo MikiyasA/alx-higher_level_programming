@@ -2,7 +2,7 @@
 """
 The module that contains the class definition of a City
 """
-from sqlalchemy import create_engine, Column, String, Integer
+from sqlalchemy import Column, String, Integer, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
 mymetadata = MetaData()
