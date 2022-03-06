@@ -20,6 +20,6 @@ if __name__ == '__main__':
     sDelete = session.query(State).filter(State.name.like('%a%')).all()
 
     for s in sDelete:
-        session.delete(sDelete)
+        session.delete(s)
 
     session.commit()
