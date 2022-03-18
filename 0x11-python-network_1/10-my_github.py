@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Python script takes GitHub credentials and
-use the Github API to display 
+use the Github API to display
 """
 import requests
 import sys
