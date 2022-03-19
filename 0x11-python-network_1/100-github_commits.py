@@ -15,8 +15,8 @@ if __name__ == "__main__":
         reqt = requests.get(url)
         comt = reqt.json()
 
-        for i in range(10):
+        for i in range(1000):
             print('{}: {}'.format(comt[i].get('sha'), comt[i].get('commit')
                                   .get('author').get('name')))
-    except Exception as a:
-        print(a)
+    except:
+        pass
