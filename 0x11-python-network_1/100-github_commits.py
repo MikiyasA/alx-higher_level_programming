@@ -18,5 +18,5 @@ if __name__ == "__main__":
         for i in range(1000):
             print('{}: {}'.format(comt[i].get('sha'), comt[i].get('commit')
                                   .get('author').get('name')))
-    except:
+    except IndexError:
         pass
